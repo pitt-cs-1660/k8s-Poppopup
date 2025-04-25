@@ -57,7 +57,7 @@ spec:
         name: wordpress
       volumeMounts:
       - name: my-volume
-        mountPath: /var/lib/mysql
+        mountPath: /var/www/html
         env:
         ##
         # mount non-sensitive environment vars from configmap ref
