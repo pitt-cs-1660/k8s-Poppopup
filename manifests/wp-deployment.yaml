@@ -55,6 +55,7 @@ spec:
       containers:
       - image: wordpress:6.2.1-apache
         name: wordpress
+        
         volumeMounts:
         - name: my-volume
           mountPath: /var/www/html
