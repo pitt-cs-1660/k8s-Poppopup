@@ -55,6 +55,9 @@ spec:
       containers:
       - image: wordpress:6.2.1-apache
         name: wordpress
+      volumeMounts:
+      - name: my-volume
+        mountPath: /var/lib/mysql
         env:
         ##
         # mount non-sensitive environment vars from configmap ref

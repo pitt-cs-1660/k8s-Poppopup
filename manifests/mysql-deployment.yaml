@@ -54,6 +54,9 @@ spec:
       containers:
       - image: mysql:8.0
         name: mysql
+      volumeMounts:
+      - name: my-volume
+        mountPath: /var/lib/mysql
         env:
         ##
         # mount non-sensitive environment vars from configmap
